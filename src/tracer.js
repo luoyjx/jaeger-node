@@ -1,8 +1,8 @@
 'use strict'
 
-const Instrument = require('@risingstack/opentracing-auto')
-const jaeger = require('jaeger-client')
-const UDPSender = require('jaeger-client/dist/src/reporters/udp_sender').default
+const Instrument = require('shimo-opentracing-auto')
+const jaeger = require('shimo-jaeger-client')
+const UDPSender = require('shimo-jaeger-client/dist/src/reporters/udp_sender').default
 
 /**
 * @class Tracer
