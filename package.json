@@ -1,6 +1,6 @@
 {
   "name": "shimo-jaeger",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Out of the box OpenTracing instrumentation for Node.js and Jaeger",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "tracing"
   ],
   "dependencies": {
-    "shimo-opentracing-auto": "1.6.2",
+    "shimo-opentracing-auto": "1.7.2",
     "shimo-jaeger-client": "3.7.2",
     "lodash": "4.17.4"
   },
