@@ -27,7 +27,7 @@
     "tracing"
   ],
   "dependencies": {
-    "shimo-opentracing-auto": "1.5.2",
+    "shimo-opentracing-auto": "1.6.2",
     "shimo-jaeger-client": "3.7.2",
     "lodash": "4.17.4"
   },
