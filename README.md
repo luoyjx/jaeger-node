@@ -75,7 +75,7 @@ Create a new Tracer and instrument modules.
   - default: `new jaeger.RemoteReporter(new UDPSender())`
 - `args.options`: Jaeger options, see [docs](https://github.com/uber/jaeger-client-node#initialization)
   - *optional*
-  - example: `{ tags: { gitHash: 'foobar' } }`
+  - example: `{ tags: { gitHash: 'foobar', sender: { host: '192.168.1.x' }, enables: ['http', 'koa', 'express'] } }`
 
 ## Instrumentations
 
