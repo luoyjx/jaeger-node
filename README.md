@@ -22,14 +22,15 @@ Out of the box distributed tracing for [Node.js](https://nodejs.org) application
 ## Getting started
 
 ```sh
-npm install @risingstack/jaeger
+npm install shimo-jaeger
 ```
 
 ```js
 // must be in the first two lines of your application
-const Tracer = require('@risingstack/jaeger')
+const Tracer = require('shimo-jaeger')
 const tracer = new Tracer({
-  serviceName: 'my-server-2'
+  serviceName: 'my-server-2',
+  enables: ['koa', 'express', 'http']
 })
 
 // rest of your code
