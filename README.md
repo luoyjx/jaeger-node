@@ -30,7 +30,9 @@ npm install shimo-jaeger
 const Tracer = require('shimo-jaeger')
 const tracer = new Tracer({
   serviceName: 'my-server-2',
-  enables: ['koa', 'express', 'http']
+  options: {
+    enables: ['koa', 'express', 'http']
+  }
 })
 
 // rest of your code
