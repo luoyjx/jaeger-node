@@ -18,7 +18,7 @@ class Tracer {
       throw new Error('serviceName is required')
     }
 
-    sampler = sampler || new jaeger.RateLimitingSampler(1)
+    sampler = sampler || new jaeger.RateLimitingSampler(options.rateLimit || 1)
     reporter = reporter || new jaeger.RemoteReporter(new UDPSender(Object.assign({}, options.sender)))
 
     this._tracer = new jaeger.Tracer(serviceName, reporter, sampler, options)
