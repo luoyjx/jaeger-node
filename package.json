@@ -1,6 +1,6 @@
 {
   "name": "shimo-jaeger",
-  "version": "2.5.8",
+  "version": "2.5.9",
   "description": "Out of the box OpenTracing instrumentation for Node.js and Jaeger",
   "main": "src/index.js",
   "scripts": {
